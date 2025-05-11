@@ -1,0 +1,49 @@
+@font-face {
+  font-family: 'VeraMono';
+  src: url('fonts/VeraMono.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'VeraMono';
+  src: url('fonts/VeraMoBd.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'VeraMono';
+  src: url('fonts/VeraMoIt.ttf') format('truetype');
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'VeraMono';
+  src: url('fonts/VeraMoBI.ttf') format('truetype');
+  font-weight: bold;
+  font-style: italic;
+}
+
+body {
+    margin: 0;
+    background-color: #C9C3AE;
+}
+
+body h1{
+    color: #4A473F;
+   font-family: 'VeraMono', monospace;
+   font-weight: bold;
+   font-style: bold;
+   font-size: 38px;
+}
+
+body p{
+    color: #4A473F;
+   font-family: 'VeraMono', monospace;
+   font-weight: normal;
+   font-style: normal;
+   font-size: 16px;
+   letter-spacing: 1px;
+}

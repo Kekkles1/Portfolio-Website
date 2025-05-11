@@ -1,0 +1,269 @@
+@font-face {
+  font-family: 'VeraMono';
+  src: url('fonts/VeraMono.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'VeraMono';
+  src: url('fonts/VeraMoBd.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'VeraMono';
+  src: url('fonts/VeraMoIt.ttf') format('truetype');
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'VeraMono';
+  src: url('fonts/VeraMoBI.ttf') format('truetype');
+  font-weight: bold;
+  font-style: italic;
+}
+
+.left-meta {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.meta-text {
+  font-family: 'VeraMono', monospace;
+  font-size: 12px;
+  color: #D9D5C4;
+  line-height: 1.2;
+} 
+
+.meta-text a{
+  font-family: 'VeraMono', monospace;
+  font-size: 12px;
+  color: #D9D5C4;
+  line-height: 1.2;
+}
+
+.meta-text p {
+  margin: 0;
+}
+
+body {
+    margin: 0;
+    background-color: #C9C3AE;
+}
+
+.heading {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 82px;
+  background-color: #403D32;
+  outline: 2px solid #D7D7D7;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+.title-centered {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0;
+  font-family: 'VeraMono', monospace;
+  font-size: 38px;
+  letter-spacing: 2px;
+  color: #D9D5C4;
+  font-weight: normal;
+}
+
+
+.heading h1 {
+  margin: 0;
+  color: #D9D5C4;
+  font-family: 'VeraMono', monospace;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 38px;
+  letter-spacing: 2px;
+}
+
+.Yorha {
+  height: 120px;
+  width: 65px;
+}
+
+.Moon {
+  height: 30px;
+  width: 30px;
+}
+
+.middle-box {
+    position: relative;
+    top:70px;
+    left: 250px;;
+    width: 1000px;
+    height: 450px;
+    background-color: #BDB8A0;
+    outline: 2px solid #787466;
+}
+.middle-box h2 {
+    color:#4A473F;
+    text-align: center;
+    margin-top: 10px;
+   color: #4A473F;
+   font-family: 'VeraMono', monospace;
+   font-weight: bold;
+   font-style: bold;
+   font-size: 30px;
+   letter-spacing: 2px;
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  margin-bottom: 50px;
+  position: relative;
+  top: 50px;
+  left: 50px;
+  width: 350px;
+  height: 50px;
+  background-color: #9E9D87;
+  outline: 1px solid #4A473F;
+  padding: 0 10px;
+  transition: all 0.3s ease;
+}
+
+.button:hover {
+  background-color: #474439;
+  outline-color: #474439;
+  cursor: pointer;
+}
+
+.inner-rect {
+  width: 30px;
+  height: 30px;
+  background-color: #4D4B37;
+  margin-right: 20px;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover .inner-rect {
+  background-color: #CAC6B1;
+}
+
+.button p {
+  margin: 0;
+  color: #4D4B37;
+  font-family: 'VeraMono', monospace;
+  font-weight: normal;
+  font-style: oblique;
+  font-size: 18px;
+  letter-spacing: 2px;
+  transition: color 0.3s ease;
+}
+
+.button:hover p {
+  color: #CAC6B1;
+}
+
+
+.tech-stack {
+  position: absolute;
+  top: 100px;
+  left: 500px;
+  width: 400px;
+  height: 300px;
+  background-color: #D9D5C4;
+  outline: 2px solid #403D32;
+  box-sizing: border-box;
+}
+
+.tech-stack h3 {
+  color: #4A473F;
+  margin: 15px;
+  font-family: 'VeraMono', monospace;
+  font-weight: bold;
+  font-style: oblique;
+  font-size: 24px;
+}
+
+.tech-icons img{
+    margin-left:20px;
+    margin-right:10px;
+    margin-bottom:20px;
+    width:90px;
+    height:90px;
+}
+
+.popup-overlay {
+  position: absolute; 
+  width: 400px;
+  height:320px;
+  background-color: #DAD6C5;
+  border: 2px solid #403D32;
+  font-family: 'VeraMono', monospace;
+  display: none;
+  z-index: 999;
+  box-shadow: 0 0 10px rgba(0,0,0,0.4);
+}
+
+.popup-header {
+  height:25px;
+  background-color: #403D32;
+  color: #D9D5C4;
+  padding: 10px 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-style: oblique;
+  font-size: 10px;
+}
+
+.popup-header h2 {
+  font-size: 18px;
+  font-family: 'VeraMono', monospace;
+  color: #D9D5C4;
+  font-weight: normal;
+  margin: 0;
+  letter-spacing: 1px;
+}
+
+.close-btn {
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.popup-body {
+  background-color:#B0AA98 ;
+  margin: 15px 15px;
+  font-family: 'VeraMono', monospace;
+  font-weight: normal;
+  padding: 15px 15px;
+  font-size: 16px;
+  color: #403D32;
+}
+
+.popup-overlay-scroll {
+  position: absolute; 
+  width: 400px;
+  height:320px;
+  background-color: #DAD6C5;
+  border: 2px solid #403D32;
+  font-family: 'VeraMono', monospace;
+  display: none;
+  z-index: 999;
+  box-shadow: 0 0 10px rgba(0,0,0,0.4);
+  overflow-y: auto;
+}
+
+.popup-body a {
+  font-family: 'VeraMono', monospace;
+  font-size: 15px;
+  color: #403D32;
+  line-height: 1.2;
+}

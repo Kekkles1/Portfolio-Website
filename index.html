@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Balorant's Website</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="heading">
+    <div class="left-meta">
+      <img src="images/yorha-icon.png" alt="Yorha" class="Yorha" />
+      <div class="meta-text">
+        <p>Terminal ~ <a href="mailto:fatima.mah24314@gmail.com">fatima.mah24314@gmail.com</a></p>
+        <p>GitHub ~ <a href="https://github.com/Kekkles1" target="_blank">Balorant's Repository</a></p>
+      </div>
+    </div>
+    <h1 class="title-centered">BALORANT</h1>
+    <img src="images/icon.png" alt="Moon" class="Moon" />
+  </div>
+
+  <div class="middle-box">
+    <h2>BALORANT'S TERMINAL</h2>
+
+    <div class="tech-stack">
+      <h3>~ Tech Stack</h3>
+      <div class="tech-icons">
+        <img src="images/java-icon.png" alt="Java" />
+        <img src="images/c-icon.png" alt="C#" />
+        <img src="images/js-icon.png" alt="JS" />
+        <img src="images/godot-icon.png" alt="Godot" />
+        <img src="images/unity-icon.png" alt="Unity" />
+        <img src="images/unreal-icon.png" alt="Unreal" />
+      </div>
+    </div>
+
+    <!-- Buttons -->
+    <div class="button" onclick="openOverlay('aboutOverlay')">
+      <div class="inner-rect"></div>
+      <p>~ About me</p>
+    </div>
+    <div class="button" onclick="openOverlay('projectsOverlay')">
+      <div class="inner-rect"></div>
+      <p>~ Projects</p>
+    </div>
+    <div class="button" onclick="openOverlay('postsOverlay')">
+      <div class="inner-rect"></div>
+      <p>~ Posts</p>
+    </div>
+
+
+    <div id="aboutOverlay" class="popup-overlay">
+      <div class="popup-header">
+        <h2>~ About Me</h2>
+        <span class="close-btn" onclick="closeOverlay('aboutOverlay')">&times;</span>
+      </div>
+      <div class="popup-body">
+        Welcome to my website! I'm an aspiring game developer (Godot preferred)!
+        I'm also interested in software development (Java preferred). If you have
+        any work in game development or building innovative software, I’d love to chat!
+        :)
+      </div>
+    </div>
+
+    <div id="projectsOverlay" class="popup-overlay-scroll">
+      <div class="popup-header">
+        <h2>~ Projects</h2>
+        <span class="close-btn" onclick="closeOverlay('projectsOverlay')">&times;</span>
+      </div>
+      <div class="popup-body">
+        Here are some of my recent projects:<br />
+        - Unreal Top-Down 2D Endless Shooter<br />
+        - Unreal 2D Platformer<br />
+        - Unity Mini-Game<br />
+        - TV Show Management System<br />
+        - Competitive Programming Kattis Solutions<br />
+        - MS Paint (Java)<br />
+        - this website :) <br />
+
+
+        Check my github for more details!
+      </div>
+    </div>
+
+
+    <div id="postsOverlay" class="popup-overlay-scroll">
+      <div class="popup-header">
+        <h2>~ Posts</h2>
+        <span class="close-btn" onclick="closeOverlay('postsOverlay')">&times;</span>
+      </div>
+      <div class="popup-body">
+        Recent thoughts:<br />
+        - <a href="post1.html" target="_blank"> Why I love working with Java</a><br />
+      </div>
+    </div>
+  </div>
+</body>
+</html>
